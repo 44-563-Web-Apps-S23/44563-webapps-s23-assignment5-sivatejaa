@@ -13,7 +13,24 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 <body>
-
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="plants.html">Interesting Plants</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="basic.html">Basic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="advanced.html">Advanced</a>
+      </li>
+    </ul>
+    </div>
+  </nav>
     <h1>"Plants by" Sivateja raju Thangala</h1>
 <div class="container">
     <div class="row">
@@ -36,5 +53,156 @@
 </div>
     <p>The col-md will break first because of high pixels (768px) , and the col-sm will break next because of low pixels (576px) </p>
 
+    <br>
+    <h3>Responsive</h3>
+    <div class = "container">
+      <img src = "tulip.jpg" class="img-fluid" width="443" alt="Responsive image" >
+      <img src = "Hemlock.jpg" class="img-fluid" width="300" alt="Responsive image">
+      <img src = "Agave.jpg" class="img-fluid" width="300" alt="Responsive image">
+    </div>
+    <br>
+    <h3>Thumbnail</h3>
+    <div class = "container">
+      <img src = "tulip.jpg" class="img-thumbnail" width="443" halt="Thumbnail image" id ="plants">
+      <img src = "Hemlock.jpg" class="img-thumbnail" width="300" alt="Thumbnail image" id ="plants">
+      <img src = "Agave.jpg"img-thumbnail" width="300" alt="Thumbnail image" id ="plants">
+    </div>
+    <br>
+    <div class="container">
+    <table class="table table-striped table-bordered table-hover table-sm">
+      <caption>List of Plants Mountains and Lakes</caption>
+      <thead class="table-dark">
+    <tr>
+      <th scope="col">Letter</th>
+      <th scope="col">Plant</th>
+      <th scope="col">Mountain</th>
+      <th scope="col">Lake</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class = "table-primary">
+      <td scope = "row">T</td>
+      <td>Tulip</td>
+      <td>Taibai</td>
+      <td>Tawakoni Lake</td>
+    </tr>
+    <tr class = "table-info">
+      <td scope = "row">H</td>
+      <td>Hemlock</td>
+      <td>Homa Mountain</td>
+      <td>Amston</td> 
+    </tr>
+    <tr class = "table-warning" >
+      <td scope = "row">A</td>
+      <td>Agave</td>
+      <td>A. Aak</td>
+      <td>Alana Lagoon</td>
+    </tr>
+    <tr class = "table-light">
+      <td scope = "row">N</td>
+      <td>Natal Plum</td>
+      <td>Uncompahgre peak</td>
+      <td>Ubinskoe</td>
+    </tr>
+    <tr class = "table-secondary">
+      <td scope = "row">G</td>
+      <td>Galanthus</td>
+      <td>Gangapurna</td>
+      <td>Great Salt</td>
+    </tr>
+    <tr class = "table-danger">
+      <td scope = "row">A</td>
+      <td>Abelia</td>
+      <td>Alaska Range</td>
+      <td>Ashford</td>
+    </tr>
+  </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <h4><label><Form></Form></label></h4> 
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group" role="group" aria-label="Success Buttons">
+      <button type="button" class="btn btn-success">T</button>
+      <button type="button" class="btn btn-success">H</button>
+      <button type="button" class="btn btn-success">A</button>
+    </div>
+      <div class="btn-group" role="group" aria-label="Alert Buttons">
+      <button type="button" class="btn btn-warning">N</button>
+      <button type="button" class="btn btn-warning">G</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Danger Buttons">
+      <button type="button" class="btn btn-danger">A</button>
+      <button type="button" class="btn btn-danger">L</button>
+      <button type="button" class="btn btn-danger">A</button>
+    </div>
+  </div>
+  <br>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" 
+    data-bs-toggle="dropdown" aria-expanded="false">Dropdown button
+    </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="basic.html">Basic</a>
+    <a class="dropdown-item" href="advanced.html">Advanced</a>
+  </div>
+  </div>
+  </div>
+  <br>
+  <div class="container">
+    <h4><label><Form></Form></label></h4> 
+   <form>
+     <div class="mb-3 form-group">
+       <label for="exampleInputEmail" class="form-lable">Email address</label>
+       <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+       <small id="emailHelp" class="form-text text-muted">Never share your email with anyone else.</small>
+     </div>
+     <div class="mb-3 form-group">
+       <label for="exampleInputEmail" class="form-lable">Plant</label>
+       <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter your plant">
+     </div>
+     <div class="mb-3 form-check">
+       <input type="checkbox" class="form-check-input" id="newsletterCheck">
+       <label class="form-check-label" for="newsletterCheck">Sign up for newsletter?</label>
+     </div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+   </form>
+ </div>
+ <br>
+ <div class="container">
+<h3> Bonus Cards: </h3>
+<div class="row">
+  <div class="col-sm-3">
+  <div class="card" style="width:20rem;">
+    <img src="tulip.jpg" class="card-img-top" alt="Tulip">
+    <div class="card-body">
+      <h5 class="card-title">Tulip</h5>
+      <p class="card-text">Tulip is a genus of flowering plants in the family Lauraceae. It is found in temperate, subtropical, and tropical forest, occurring in China, Korea</p>
+      <a href="tulip.jpg" class="btn btn-success">Tulip Image</a>
+    </div>
+  </div>
+  </div>
+  <div class="col-sm-3">
+  <div class="card" style="width: 18rem;">
+    <img src="Hemlock.jpg" class="card-img-top" alt="Hemlock">
+      <div class="card-body">
+        <h5 class="card-title">Hemlock</h5>
+        <p class="card-text">\Hemlock is an ornamental shrub that is under-appreciated and underused in many parts of the country and is worth a second look.Check the Plant</p>
+        <a href="Hemlock.jpg" class="btn btn-danger">Hemlock Image</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-3">
+    <div class="card" style="width: 18rem;">
+      <img src="Agave.jpg" class="card-img-top" alt="Agave">
+        <div class="card-body">
+          <h5 class="card-title">Agave</h5>
+          <p class="card-text">Agave is a genus of flowering plants in the family Lamiaceae. The genus name is reportedly in reference to Nepete, an ancient Etruscan city. </p>
+          <a href="Agave.jpg" class="btn btn-primary">Agave Image</a>
+        </div>
+    </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
